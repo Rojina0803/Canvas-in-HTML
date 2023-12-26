@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title> Canvas</title>
+    </head>
+    <body>
+        <canvas id="myCanvas" height="200px" width="300px" style="border:10px solid black;">
+            Your browser doesn't support canvas.
+        </canvas>
+        <script>
+            let myCanvas= document.getElementById("myCanvas");
+            let ctx= myCanvas.getContext("2d");
+            ctx.fillStyle="brown";
+            ctx.fillRect(10,20,30,30);
+            ctx.beginPath();
+            ctx.moveTo(10,10);
+            ctx.lineTo(10,100);
+            ctx.lineTo(250,100);
+            ctx.lineTo(250,10);
+            ctx.lineTo(10,10);
+            ctx.stroke();
+        </script>
+    </body>
+</html>
